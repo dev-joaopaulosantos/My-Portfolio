@@ -1,0 +1,23 @@
+@use '../../styles/variables'
+@use '../../styles/mixins'
+
+.project
+    width: 300px
+    height: 180px
+
+    .gradient
+        width: inherit
+        height: inherit
+        color: white
+        cursor: pointer
+        background: linear-gradient( to top, #111111 5%, transparent 95%)
+
+        .content
+            visibility: hidden
+            width: inherit
+            height: inherit
+            @include mixins.center
+            flex-direction: column
+
+        &:hover
+            visibility: visible
