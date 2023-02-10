@@ -2,22 +2,29 @@
 @use '../../styles/mixins'
 
 .project
-    width: 300px
-    height: 180px
+    width: 360px
+    height: 210px
 
     .gradient
         width: inherit
         height: inherit
         color: white
         cursor: pointer
-        background: linear-gradient( to top, #111111 5%, transparent 95%)
+        background: linear-gradient( to top, #111111 2%, transparent 98%)
 
         .content
-            visibility: hidden
             width: inherit
             height: inherit
             @include mixins.center
             flex-direction: column
+            color: #ffffff00
+            transition: all .4s
 
-        &:hover
-            visibility: visible
+            h3
+                font-size: 1.8rem
+                margin-bottom: .3rem
+
+    :hover 
+        .content
+            color: #FFF
+            background: #00000081

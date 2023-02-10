@@ -1,14 +1,18 @@
 import React from 'react'
-import MainContent from '../../components/MainContent/MainContent'
+import './Home.sass'
+// import MainContent from '../../components/MainContent/MainContent'
 import AboutMe from '../../components/AboutMe/AboutMe'
+import TechnologiesContainer from '../../components/TecnologiesContainer/TechnologiesContainer'
+import ProjectsContainer from '../../components/ProjectsContainer/ProjectsContainer'
 
 
 const Home = () => {
   return (
-    <div>
-        <AboutMe />
-        <MainContent />
-    </div>
+    <main id='main-container'>
+      <AboutMe />
+      <TechnologiesContainer />
+      <ProjectsContainer />
+    </main>
   )
 }
 

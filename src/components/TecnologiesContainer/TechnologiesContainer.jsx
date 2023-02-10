@@ -14,19 +14,30 @@ const technologies = [
 const TechnologiesContainer = () => {
   return (
     <section className="technologies-container">
-      <h2>Tecnologias</h2>
-      <div className="technologies-grid">
-        {technologies.map((tech) => (
-          <div
-           className="technology-card" id={tech.id} key={tech.id}>
-            {tech.icon}
-            <div className="technology-info">
-              <h3>{tech.name}</h3>
-              <ProgressBar progress={tech.progress} />
+      <h2>Habilidades</h2>
+      <div className="content">
+        <div className="skills">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Necessitatibus magni voluptate officiis laudantium incidunt
+            iusto rem. Odit aliquam maxime aliquid laboriosam, rerum et
+            voluptatibus nesciunt blanditiis deleniti, tempore obcaecati
+            placeat?
+          </p>
+        </div>
+        <div className="technologies">
+          {technologies.map((tech) => (
+            <div
+              className="technology-card" id={tech.id} key={tech.id}>
+              {tech.icon}
+              <div className="technology-info">
+                <h3>{tech.name}</h3>
+                <ProgressBar progress={tech.progress} />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
     </section>
   )
 }

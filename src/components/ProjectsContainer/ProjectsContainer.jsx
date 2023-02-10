@@ -10,22 +10,22 @@ const projects = [
 		name: 'ReactMovie',
 		image: Netflix,
 		description: `Descrição do projeto reactmovie Descrição do 
-							projeto reactmovie Descrição do projeto reactmovie 
-							Descrição do projeto reactmovie Descrição do 
-							projeto reactmovie Descrição do projeto reactmovie 
-							Descrição do projeto reactmovie Descrição do projeto 
-							reactmovie Descrição do projeto reactmovie`
+						projeto reactmovie Descrição do projeto reactmovie 
+						Descrição do projeto reactmovie Descrição do 
+						projeto reactmovie Descrição do projeto reactmovie 
+						Descrição do projeto reactmovie Descrição do projeto 
+						reactmovie Descrição do projeto reactmovie`
 	},
 	{
 		id: 2,
 		name: 'Teste',
 		image: ImgTeste,
 		description: `Descrição teste descrição teste descrição 
-							teste Descrição teste descrição teste descrição teste 
-							Descrição teste descrição teste descrição teste Descrição 
-							teste descrição teste descrição teste Descrição teste 
-							descrição teste descrição teste Descrição teste descrição 
-							teste descrição teste`
+						teste Descrição teste descrição teste descrição teste 
+						Descrição teste descrição teste descrição teste Descrição 
+						teste descrição teste descrição teste Descrição teste 
+						descrição teste descrição teste Descrição teste descrição 
+						teste descrição teste`
 	}
 ]
 

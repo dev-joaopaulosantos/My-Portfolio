@@ -26,7 +26,7 @@ const CardProject = ({ project }) => {
                 <div className='gradient'>
                     <div className="content">
                         <h3>{project.name}</h3>
-                        <p>Clique para saber mais</p>
+                        <p>Saiba mais</p>
                     </div>
                 </div>
             </div>
