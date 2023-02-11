@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import ProjectDialog from '../ProjectDialog/ProjectDialog'
+// import ProjectDialog from '../ProjectDialog/ProjectDialog'
 import './CardProject.sass'
 
 const CardProject = ({ project }) => {
@@ -10,27 +10,39 @@ const CardProject = ({ project }) => {
 
     }
     return (
-        <React.Fragment>
-            <ProjectDialog
-                open={openProjectDialog}
-                dialogHandler={dialogHandler}
-                project={project}
-            />
-            <div className="project"
-                onClick={() => setOpenProjectDialog(true)}
+        <div className="project" >
+            <div className='image-project'
                 style={{
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundImage: `url(${project.image})`
                 }}>
-                <div className='gradient'>
-                    <div className="content">
-                        <h3>{project.name}</h3>
-                        <p>Saiba mais</p>
-                    </div>
+                <div className="gradient">
+                    <h3 className="name-project">{project.name}</h3>
                 </div>
             </div>
-        </React.Fragment>
+            <div className="content">
+                <div className="project-description">
+                    <p>Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Amet voluptatem quam
+                        suscipit praesentium? Nihil, temporibus
+                        eos dolorem quia autem earum voluptate
+                        porro provident nostrum, cum, molestias
+                        exercitationem voluptatem eligendi quaerat.
+                    </p>
+                    <p>Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Amet voluptatem quam
+                        suscipit praesentium? Nihil, temporibus
+                        eos dolorem quia autem earum voluptate
+                        porro provident nostrum, cum, molestias
+                        exercitationem voluptatem eligendi quaerat.
+                    </p>
+                </div>
+                <div className="card-btn">
+                    <a href="#">Ver Projeto</a>
+                </div>
+            </div>
+        </div>
     )
 }
 

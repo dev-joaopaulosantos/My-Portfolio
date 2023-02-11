@@ -4,6 +4,7 @@ import './Home.sass'
 import AboutMe from '../../components/AboutMe/AboutMe'
 import TechnologiesContainer from '../../components/TecnologiesContainer/TechnologiesContainer'
 import ProjectsContainer from '../../components/ProjectsContainer/ProjectsContainer'
+import Contact from '../../components/Contact/Contact'
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <AboutMe />
       <TechnologiesContainer />
       <ProjectsContainer />
+      <Contact />
     </main>
   )
 }

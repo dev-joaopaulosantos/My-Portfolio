@@ -2,29 +2,71 @@
 @use '../../styles/mixins'
 
 .project
-    width: 360px
-    height: 210px
+	width: 320px
+	height: 100%
+	transition: 0.3s
+	border-radius: variables.$card-border-radius
 
-    .gradient
-        width: inherit
-        height: inherit
-        color: white
-        cursor: pointer
-        background: linear-gradient( to top, #111111 2%, transparent 98%)
+	&:hover
+		transform: scale(1.1)
 
-        .content
-            width: inherit
-            height: inherit
-            @include mixins.center
-            flex-direction: column
-            color: #ffffff00
-            transition: all .4s
+		.name-project
+			opacity: 100%
+			padding: 0.8rem
+			font-size: 1.8rem
 
-            h3
-                font-size: 1.8rem
-                margin-bottom: .3rem
+	.image-project
+		width: inherit
+		height: 180px
+		cursor: pointer
+		transition: all 0.5s
 
-    :hover 
-        .content
-            color: #FFF
-            background: #00000081
+	.content
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		background: #000000
+		height: 200
+		padding: 1rem .5rem 0 .5rem
+		overflow: hidden
+		color: #fff
+		transition: all 0.5s
+
+		.project-description
+			height: 120px
+			overflow: auto
+
+		.card-btn
+			height: 60px
+			@include mixins.center
+			justify-content: start
+
+			a
+				@include mixins.btn
+				padding: .5rem .8rem
+				font-size: .9rem
+
+.image-project
+	.gradient
+		width: inherit
+		height: inherit
+		display: flex
+		justify-content: center
+		align-items: end
+		background: linear-gradient(to top, #000000 8%, transparent 92%)
+
+		.name-project
+			color: #fff
+			opacity: 0
+			transition: all 0.3s
+
+.project-description
+	scrollbar-width: thin
+	scrollbar-color: #e50914 #00000000
+	&::-webkit-scrollbar
+		width: 5px
+	&::-webkit-scrollbar-track
+		background: #00000000
+	&::-webkit-scrollbar-thumb
+		background-color: #e50914
+		border-radius: 20px

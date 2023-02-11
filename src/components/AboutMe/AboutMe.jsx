@@ -18,8 +18,7 @@ const Sidebar = () => {
         </p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
           sed odio vero dignissimos omnis provident, animi tempore a harum
-          facilis doloribus nisi dolore ex sequi consectetur
-          assumenda placeat quod facere.
+          facilis doloribus nisi dolore ex sequi.
         </p>
         <div id="btn-container">
           <a href="#">Ver Curriculo</a>
