@@ -8,29 +8,96 @@ header
     left: 0
     right: 0
     z-index: 99
-    display: flex
-    background: #464646
-    justify-content: space-between
-    align-items: center
-    color: variables.$text-color
     padding: 0 2rem
+    background: variables.$body-bg-color
+    @include mixins.mobile
+        padding: 0 1rem
 
-    #name-container
-        @include mixins.center
-        gap: .8rem
+    #nav-desktop
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: space-between
 
-        #icon-user
+        #name-container
             @include mixins.center
-            width: 50px
-            height: 50px
-            border-radius: 30px
-            background: red
-            font-size: 2.2rem
+            gap: .8rem
 
-    #nav ul
-        @include mixins.center
-        list-style: none
-        gap: 1rem
+            #icon-user
+                @include mixins.center
+                width: 50px
+                height: 50px
+                border-radius: 30px
+                background: variables.$gradient
+                font-size: 1.5rem
+                @include mixins.tablet
+                    background-image: url("../../img/eu.jpg")
+                    background-size: cover
 
-        li a
+                @include mixins.big-smartphone
+                    width: 40px
+                    height: 40px
+                    font-size: 1.2rem
+                span
+                    @include mixins.tablet
+                        display: none
+
+            h2
+                color: variables.$text-color
+                @include mixins.big-smartphone
+                    font-size: 1.2rem
+
+        #nav
+            @include mixins.small-tablet
+                display: none
+            ul
+                @include mixins.center
+                list-style: none
+                gap: 1rem
+
+                li a
+                    color: variables.$text-color
+
+        #mobile-menu-btn
+            display: none
             color: variables.$text-color
+            background: transparent
+            font-size: 2.2rem
+            border: none
+            width: 40px
+            height: 40px
+            @include mixins.small-tablet
+                display: block
+
+    #menu-mobile
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        background: black
+        position: absolute
+        top: 70px
+        right: 0
+        height: 100vh
+        transition: all .5s
+        overflow: hidden
+        white-space: nowrap
+
+        ul
+            display: flex
+            flex-direction: column
+            align-items: center
+            gap: 1.5rem
+            li
+                a
+                    font-size: 1.8rem
+                    font-weight: 300
+
+        #social-networks
+            @include mixins.center
+
+.menu-close
+    width: 0%
+
+.menu-open
+    width: 70%

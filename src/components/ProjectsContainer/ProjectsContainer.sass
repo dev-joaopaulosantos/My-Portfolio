@@ -3,11 +3,17 @@
 
 .projects-container
     width: 100%
+    @include mixins.big-smartphone
+        padding: 0 2rem
+    @include mixins.mobile
+        padding: 0 1rem
 
     h2
         font-size: 2.5rem
         color: variables.$text-color
         margin: 2rem 0
+        @include mixins.tablet
+            font-size: 2rem
     
     .projects
         display: flex
@@ -15,3 +21,5 @@
         flex-wrap: wrap
         width: 100%
         gap: 2rem
+        @include mixins.tablet
+            justify-content: center

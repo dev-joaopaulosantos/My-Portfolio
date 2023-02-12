@@ -3,6 +3,7 @@ import './AboutMe.sass'
 import SocialNetworks from '../SocialNetworks/SocialNetworks'
 
 const Sidebar = () => {
+
   return (
     <section id='about-container'>
       <div id="image">

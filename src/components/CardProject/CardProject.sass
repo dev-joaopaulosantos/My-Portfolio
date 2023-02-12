@@ -5,7 +5,11 @@
 	width: 320px
 	height: 100%
 	transition: 0.3s
-	border-radius: variables.$card-border-radius
+	border-radius: 30px
+	@include mixins.small-tablet
+		width: 270px
+	@include mixins.big-smartphone
+		width: 320px
 
 	&:hover
 		transform: scale(1.1)
@@ -62,11 +66,11 @@
 
 .project-description
 	scrollbar-width: thin
-	scrollbar-color: #e50914 #00000000
+	scrollbar-color: #003598 #00000000
 	&::-webkit-scrollbar
 		width: 5px
 	&::-webkit-scrollbar-track
 		background: #00000000
 	&::-webkit-scrollbar-thumb
-		background-color: #e50914
+		background: variables.$gradient
 		border-radius: 20px

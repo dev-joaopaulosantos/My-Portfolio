@@ -8,10 +8,11 @@
 
 body
     background: variables.$body-bg-color
-
 a
     text-decoration: none
-
+    color: variables.$text-color
+ul
+    list-style: none
 h1
     width: 100%
     font-size: 4.4rem
@@ -20,19 +21,18 @@ h1
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
 
+
 /* Estilizando a barra de rolagem nos navegadores Chrome e Edge */
 body::-webkit-scrollbar
     width: 5px
-
 body::-webkit-scrollbar-track
     background: #00000000
-
 body::-webkit-scrollbar-thumb
-    background-color: #e50914
+    background: variables.$gradient
     border-radius: 20px
-    /* border: 3px solid orange; */
+    // border: 3px solid orange
 
 /* estilizando a barra de rolagem no navehador firfox */
 body
     scrollbar-width: thin
-    scrollbar-color: #e50914 #00000000
+    scrollbar-color: #003598 #00000000
