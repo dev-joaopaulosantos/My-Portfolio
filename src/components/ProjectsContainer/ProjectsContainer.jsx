@@ -32,8 +32,11 @@ const projects = [
 const ProjectsContainer = () => {
 
 	return (
-		<section className="projects-container">
+		<section id="projects-container">
+			<div className="subtitle">
 			<h2>Projetos</h2>
+			<div className="line-subtitle"></div>
+			</div>
 			<div className="projects">
 				{projects.map((project) => (
 					<CardProject

@@ -3,22 +3,26 @@
     
 #contact-container
     width: 100%
+    height: 100vh
+    max-height: 700px
+    padding-top: 70px
     color: variables.$text-color
     display: flex
     justify-content: center
-    padding: 2rem 3rem
-    margin-top: 4rem
     position: relative
     @include mixins.tablet
         flex-wrap: wrap
+        height: auto
+    @include mixins.big-smartphone
+        padding: 70px 2rem
     @include mixins.mobile
-        padding: 1rem
+        padding: 70px 1rem
 
     .line
         height: 5px
         background: variables.$gradient
         position: absolute
-        top: 0
+        top: 3rem
         left: 0
         right: 0
 
@@ -30,11 +34,13 @@
         @include mixins.big-smartphone
             padding-right: 0
 
-        h2
-            font-size: 2.5rem
-            margin-bottom: .8rem
-            @include mixins.mobile
-                font-size: 2rem
+        .subtitle
+            display: inline-block
+            margin: 2rem 0
+            h2
+                font-size: 2.5rem
+                @include mixins.mobile
+                    font-size: 2rem
 
         p
             text-align: justify
@@ -83,7 +89,7 @@
                 margin-top: 2%
                 width: 100%
 
-            button
+            .button
                 @include mixins.btn
                 margin: .8rem 0
                 @include mixins.mobile

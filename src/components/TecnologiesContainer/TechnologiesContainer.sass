@@ -1,19 +1,27 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
 
-.technologies-container
-    margin-bottom: 1rem
+#technologies-container
+    padding-top: 70px
+    height: 100vh
+    max-height: 700px
+    @include mixins.tablet
+        height: auto
     @include mixins.big-smartphone
-        padding: 0 2rem
+        padding: 70px 2rem 0
     @include mixins.mobile
-        padding: 0 1rem
+        padding: 70px 1rem 0
 
-    h2
-        font-size: 2.5rem
+    .subtitle
+        display: inline-block
         margin: 2rem 0
-        color: variables.$text-color
         @include mixins.tablet
-            font-size: 2rem
+            margin: 1rem 0
+        h2
+            font-size: 2.5rem
+            color: variables.$text-color
+            @include mixins.tablet
+                font-size: 2rem
 
     .content
         display: flex
@@ -29,12 +37,11 @@
             padding-right: 2rem
             @include mixins.tablet
                 width: 100%
-                margin-bottom: 1rem
+                margin-bottom: 2rem
                 padding-right: 0
 
             p
                 line-height: 1.5rem
-                letter-spacing: .1rem
                 text-align: justify
 
         .technologies
@@ -60,12 +67,10 @@
 
                 h3
                     color: variables.$text-color
-                    margin-bottom: 1rem
-                    @include mixins.mobile
-                        margin-bottom: .6rem
+                    margin-bottom: .6rem
 
                 svg
-                    font-size: 4rem
+                    font-size: 3.3rem
                     color: #003598
                     transition: .4s
                     @include mixins.tablet

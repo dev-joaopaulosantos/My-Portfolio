@@ -4,7 +4,12 @@
 #about-container
     display: flex
     color: variables.$text-color
-    padding-top: 6rem 
+    padding-top: 70px
+    height: 100vh
+    max-height: 700px
+    @include mixins.tablet
+        height: auto
+        padding-top: 7rem
 
 
     #image
@@ -42,7 +47,7 @@
 
         p
             line-height: 1.5rem
-            letter-spacing: .1rem
+            // letter-spacing: .1rem
             text-align: justify
 
         #btn-container

@@ -13,8 +13,11 @@ const technologies = [
 
 const TechnologiesContainer = () => {
   return (
-    <section className="technologies-container">
-      <h2>Habilidades</h2>
+    <section id="technologies-container">
+      <div className="subtitle">
+        <h2>Habilidades</h2>
+        <div className="line-subtitle"></div>
+      </div>
       <div className="content">
         <div className="skills">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.

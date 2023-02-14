@@ -1,19 +1,23 @@
 @use '../../styles/variables'
 @use '../../styles/mixins'
 
-.projects-container
+#projects-container
     width: 100%
+    // height: 100vh
+    padding-top: 70px
     @include mixins.big-smartphone
-        padding: 0 2rem
+        padding: 70px 2rem
     @include mixins.mobile
-        padding: 0 1rem
+        padding: 70px 1rem
 
-    h2
-        font-size: 2.5rem
-        color: variables.$text-color
+    .subtitle
         margin: 2rem 0
-        @include mixins.tablet
-            font-size: 2rem
+        display: inline-block
+        h2
+            font-size: 2.5rem
+            color: variables.$text-color
+            @include mixins.tablet
+                font-size: 2rem
     
     .projects
         display: flex

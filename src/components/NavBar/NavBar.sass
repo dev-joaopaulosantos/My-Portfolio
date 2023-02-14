@@ -48,7 +48,7 @@ header
                 @include mixins.big-smartphone
                     font-size: 1.2rem
 
-        #nav
+        #menu-desktop
             @include mixins.small-tablet
                 display: none
             ul
@@ -58,6 +58,7 @@ header
 
                 li a
                     color: variables.$text-color
+                    text-transform: uppercase
 
         #mobile-menu-btn
             display: none
@@ -74,7 +75,7 @@ header
         display: flex
         flex-direction: column
         justify-content: space-around
-        background: black
+        background: #000000c7
         position: absolute
         top: 70px
         right: 0
@@ -82,6 +83,7 @@ header
         transition: all .5s
         overflow: hidden
         white-space: nowrap
+        backdrop-filter: blur(5px)
 
         ul
             display: flex
@@ -90,8 +92,9 @@ header
             gap: 1.5rem
             li
                 a
-                    font-size: 1.8rem
+                    font-size: 1.6rem
                     font-weight: 300
+                    text-transform: uppercase
 
         #social-networks
             @include mixins.center
@@ -101,3 +104,5 @@ header
 
 .menu-open
     width: 70%
+    @include mixins.mobile
+        width: 100%
