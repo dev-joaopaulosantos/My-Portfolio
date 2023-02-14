@@ -2,19 +2,20 @@
 @use '../../styles/mixins'
 
 .alert-container
-    background: green
+    background: #dbdbdb9d
     position: fixed
     z-index: 9
-    padding: 1rem
     display: flex
     justify-content: center
     align-items: center
     top: 100px
     left: 3rem
     right: 3rem
+    transition: all .5s
+    overflow: hidden
 
     .alert
-        color: #000000
+        color: variables.$text-color
         background: red
         padding: 1.5rem
         width: 80%
@@ -22,17 +23,35 @@
         justify-content: space-between
         align-items: center
         position: relative
+        border-radius: variables.$card-border-radius
 
         .alert-content
-            background: yellow
+            h2
+                display: inline-block
+            
+            p
+                padding-top: .3rem
 
         button
-            padding: 1rem
+            display: flex
+            align-items: center
+            font-size: 2rem
+            background: transparent
+            color: variables.$text-color
+            border: none
+            cursor: pointer
 
         .alert-progress-bar
-            height: 5px
-            background: #48ff00
+            height: 7px
+            // background: #CCC
             position: absolute
             bottom: 0
             left: 0
             right: 0
+            
+            .progress-bar
+                height: 100%
+                width: 100%
+                border-radius: variables.$card-border-radius
+                // background: variables.$text-color
+                // transition: all ease 5s

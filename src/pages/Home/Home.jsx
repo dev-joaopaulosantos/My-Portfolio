@@ -9,15 +9,26 @@ import AlertComponent from '../../components/AlertComponent/AlertComponent'
 
 
 const Home = () => {
-  const [sendEmailError, setSendEmailError] = useState(false)
+  const [alertIsOpen, setAlertIsOpen] = useState(false)
+  const [emailSuccessfullySent, setEmailSuccessfullySent] = useState(false)
 
   return (
     <main id='main-container'>
-      {sendEmailError ? <AlertComponent sendEmailError={sendEmailError} setSendEmailError={setSendEmailError} /> : ''}
+      <AlertComponent 
+      alertIsOpen={alertIsOpen} 
+      setAlertIsOpen={setAlertIsOpen}
+      emailSuccessfullySent={emailSuccessfullySent}
+      setEmailSuccessfullySent={setEmailSuccessfullySent}
+      />
       <AboutMe />
       <TechnologiesContainer />
       <ProjectsContainer />
-      <Contact sendEmailError={sendEmailError} setSendEmailError={setSendEmailError} />
+      <Contact 
+      alertIsOpen={alertIsOpen} 
+      setAlertIsOpen={setAlertIsOpen}
+      emailSuccessfullySent={emailSuccessfullySent}
+      setEmailSuccessfullySent={setEmailSuccessfullySent}
+      />
     </main>
   )
 }

@@ -5,7 +5,7 @@ import { MdOutlineEmail } from 'react-icons/md'
 import { useEffect, useState } from 'react'
 import emailjs from '@emailjs/browser'
 
-const Contact = ({ sendEmailError, setSendEmailError }) => {
+const Contact = ({ alertIsOpen, setAlertIsOpen, emailSuccessfullySent, setEmailSuccessfullySent }) => {
   const [name, setName] = useState('')
   const [lastName, setLastName] = useState('')
   const [email, setEmail] = useState('')
@@ -13,16 +13,19 @@ const Contact = ({ sendEmailError, setSendEmailError }) => {
   const fullName = `${name} ${lastName}`
 
   useEffect(() => {
-    console.log(sendEmailError)
-  }, [sendEmailError])
+    console.log(alertIsOpen)
+    console.log(emailSuccessfullySent)
+  }, [alertIsOpen])
 
   const sendEmail = (e) => {
     e.preventDefault()
 
     if(name === '' || lastName === ''|| email === '' || message === ''){
-      setSendEmailError(true)
+      setAlertIsOpen(true)
+      setEmailSuccessfullySent(false)
     }else{
-      setSendEmailError(false)
+      setAlertIsOpen(true)
+      setEmailSuccessfullySent(true)
     }
 
     // const templateParams = {
@@ -35,7 +38,7 @@ const Contact = ({ sendEmailError, setSendEmailError }) => {
     //   .then((res) => {
     //     console.log('EMAIL ENVIADO', res.status, res.text)
     //     if (res.status == 200) {
-    //       setSendEmailError(false)
+    //       setAlertIsOpen(false)
     //     }
 
     //     setName('')
