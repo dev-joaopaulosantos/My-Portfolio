@@ -1,14 +1,8 @@
 import React, { useState } from 'react'
-// import ProjectDialog from '../ProjectDialog/ProjectDialog'
 import './CardProject.sass'
 
 const CardProject = ({ project }) => {
-    const [openProjectDialog, setOpenProjectDialog] = useState(false)
 
-    const dialogHandler = () => {
-        setOpenProjectDialog(!openProjectDialog)
-
-    }
     return (
         <div className="project" >
             <div className='image-project'
@@ -23,23 +17,10 @@ const CardProject = ({ project }) => {
             </div>
             <div className="content">
                 <div className="project-description">
-                    <p>Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Amet voluptatem quam
-                        suscipit praesentium? Nihil, temporibus
-                        eos dolorem quia autem earum voluptate
-                        porro provident nostrum, cum, molestias
-                        exercitationem voluptatem eligendi quaerat.
-                    </p>
-                    <p>Lorem ipsum, dolor sit amet consectetur
-                        adipisicing elit. Amet voluptatem quam
-                        suscipit praesentium? Nihil, temporibus
-                        eos dolorem quia autem earum voluptate
-                        porro provident nostrum, cum, molestias
-                        exercitationem voluptatem eligendi quaerat.
-                    </p>
+                    <p>{project.description}</p>
                 </div>
                 <div className="card-btn">
-                    <a href="#">Ver Projeto</a>
+                    <a href={project.link} target="_blank">Ver Projeto</a>
                 </div>
             </div>
         </div>

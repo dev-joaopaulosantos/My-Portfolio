@@ -1,15 +1,9 @@
 import './TechnologiesContainer.sass'
-import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMysql, DiReact } from 'react-icons/di'
+// import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMysql, DiReact } from 'react-icons/di'
 import ProgressBar from '../ProgressBar/ProgressBar'
+import data from '../../../data'
 
-const technologies = [
-  { id: 'html', name: 'HTML5', progress: 70, icon: <DiHtml5 /> },
-  { id: 'css', name: 'CSS3', progress: 65, icon: <DiCss3 /> },
-  { id: 'js', name: 'JAvaScript', progress: 45, icon: <DiJsBadge /> },
-  { id: 'node', name: 'Node.js', progress: 10, icon: <DiNodejsSmall /> },
-  { id: 'mysql', name: 'MySQL', progress: 30, icon: <DiMysql /> },
-  { id: 'react', name: 'React', progress: 46, icon: <DiReact /> },
-]
+const technologies = data.technologies
 
 const TechnologiesContainer = () => {
   return (

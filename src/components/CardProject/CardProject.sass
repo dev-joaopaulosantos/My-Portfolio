@@ -11,17 +11,14 @@
 		width: 320px
 
 	&:hover
-		transform: scale(1.1)
+		transform: scale(1.05)
 
 		.name-project
-			opacity: 100%
-			padding: 0.8rem
 			font-size: 1.8rem
 
 	.image-project
 		width: inherit
 		height: 180px
-		cursor: pointer
 		border-radius: variables.$card-border-radius variables.$card-border-radius 0 0
 		transition: all 0.5s
 
@@ -30,16 +27,21 @@
 		flex-direction: column
 		justify-content: space-between
 		background: variables.$bg-color
-		height: 200
-		padding: 1rem .5rem 0 .5rem
+		height: 220
+		padding: 0 .5rem 0 .5rem
 		border-radius: 0 0 variables.$card-border-radius variables.$card-border-radius
 		overflow: hidden
-		color: #fff
+		color: variables.$text-color
 		transition: all 0.5s
 
 		.project-description
-			height: 120px
+			height: 150px
 			overflow: auto
+			p
+				text-align: justify
+				padding: 0 .5rem
+				@include mixins.mobile
+					font-size: .9rem
 
 		.card-btn
 			height: 60px
@@ -58,11 +60,12 @@
 		display: flex
 		justify-content: center
 		align-items: end
-		background: linear-gradient(to top, #000000 8%, transparent 92%)
+		background: linear-gradient(to top, #000000 1%, transparent 99%)
 
 		.name-project
-			color: #fff
-			opacity: 0
+			color: variables.$text-color
+			padding: .8rem
+			text-transform: uppercase
 			transition: all 0.3s
 
 .project-description

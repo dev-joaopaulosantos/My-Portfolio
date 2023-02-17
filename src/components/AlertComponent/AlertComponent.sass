@@ -2,7 +2,7 @@
 @use '../../styles/mixins'
 
 .alert-container
-    background: #dbdbdb9d
+    // background: #dbdbdb9d
     position: fixed
     z-index: 9
     display: flex
@@ -13,24 +13,40 @@
     right: 3rem
     transition: all .5s
     overflow: hidden
+    @include mixins.small-tablet
+        left: 2rem
+        right: 2rem
+    @include mixins.mobile
+        left: 1rem
+        right: 1rem
 
     .alert
         color: variables.$text-color
-        background: red
-        padding: 1.5rem
+        background: linear-gradient(90deg, #313131 46%, rgba(38,38,38,1) 100%)
+        padding: .8rem 1.2rem
         width: 80%
         display: flex
         justify-content: space-between
         align-items: center
         position: relative
         border-radius: variables.$card-border-radius
+        box-shadow: rgba(192, 192, 192, 0.2) 0px 2px 8px 0px
+        @include mixins.big-smartphone
+            width: 100%
+        @include mixins.mobile
+            padding: .4rem .8rem .8rem .8rem
+
 
         .alert-content
             h2
                 display: inline-block
+                @include mixins.mobile
+                    font-size: 1.1rem
             
             p
                 padding-top: .3rem
+                @include mixins.mobile
+                    font-size: .8rem
 
         button
             display: flex
@@ -43,7 +59,6 @@
 
         .alert-progress-bar
             height: 7px
-            // background: #CCC
             position: absolute
             bottom: 0
             left: 0
@@ -53,5 +68,4 @@
                 height: 100%
                 width: 100%
                 border-radius: variables.$card-border-radius
-                // background: variables.$text-color
-                // transition: all ease 5s
+                background: variables.$text-color

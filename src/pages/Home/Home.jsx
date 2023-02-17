@@ -7,6 +7,7 @@ import ProjectsContainer from '../../components/ProjectsContainer/ProjectsContai
 import Contact from '../../components/Contact/Contact'
 import AlertComponent from '../../components/AlertComponent/AlertComponent'
 
+const openAlertTime = 5000
 
 const Home = () => {
   const [alertIsOpen, setAlertIsOpen] = useState(false)
@@ -19,15 +20,15 @@ const Home = () => {
       setAlertIsOpen={setAlertIsOpen}
       emailSuccessfullySent={emailSuccessfullySent}
       setEmailSuccessfullySent={setEmailSuccessfullySent}
+      openAlertTime={openAlertTime}
       />
       <AboutMe />
       <TechnologiesContainer />
       <ProjectsContainer />
       <Contact 
-      alertIsOpen={alertIsOpen} 
       setAlertIsOpen={setAlertIsOpen}
-      emailSuccessfullySent={emailSuccessfullySent}
       setEmailSuccessfullySent={setEmailSuccessfullySent}
+      openAlertTime={openAlertTime}
       />
     </main>
   )

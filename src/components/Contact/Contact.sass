@@ -67,8 +67,6 @@
         @include mixins.center
         @include mixins.tablet
             width: 100%
-        @include mixins.small-tablet
-            justify-content: start
 
         form
             display: flex
@@ -89,9 +87,23 @@
                 margin-top: 2%
                 width: 100%
 
-            .button
+            #button
+                font-size: 1rem
                 @include mixins.btn
                 margin: .8rem 0
                 @include mixins.mobile
                     width: 100%
                     font-size: 1.1rem
+
+            .btn-disabled
+                opacity: .3
+
+            .recaptcha
+                width: 100%
+                padding: .8rem 0
+
+                .error-recaptcha
+                    color: #d32f2f
+                    display: flex
+                    justify-content: start
+                    font-size: .9rem

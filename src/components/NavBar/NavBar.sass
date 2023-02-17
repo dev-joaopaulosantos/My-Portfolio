@@ -31,6 +31,7 @@ header
                 border-radius: 30px
                 background: variables.$gradient
                 font-size: 1.5rem
+                color: variables.$text-color
                 @include mixins.tablet
                     background-image: url("../../img/eu.jpg")
                     background-size: cover
@@ -49,16 +50,21 @@ header
                     font-size: 1.2rem
 
         #menu-desktop
-            @include mixins.small-tablet
+            @include mixins.tablet
                 display: none
             ul
                 @include mixins.center
                 list-style: none
-                gap: 1rem
+                gap: .5rem
 
                 li a
                     color: variables.$text-color
                     text-transform: uppercase
+                    padding: .3rem .5rem
+                    transition: all .4s
+                    &:hover
+                        background: #003598
+                        border-radius: variables.$card-border-radius
 
         #mobile-menu-btn
             display: none
@@ -68,7 +74,7 @@ header
             border: none
             width: 40px
             height: 40px
-            @include mixins.small-tablet
+            @include mixins.tablet
                 display: block
 
     #menu-mobile
