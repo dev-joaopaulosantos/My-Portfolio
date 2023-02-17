@@ -16,7 +16,7 @@ const Sidebar = () => {
           Sou um desenvolvedor full stack com foco em web, porém já desenvolvi também aplicações
           mobile. Estou sempre em busca de novas oportunidades de apredizado. Tento me atualizar o maximo possivel
           sobre as mais atuais tecnologias e ferramentas para construir projetos sólidos e modernos. <br />
-          Tecnologias: React - JavaScript - Sass - Material UI - PHP - MySql
+          <strong>Tecnologias: React - JavaScript - Sass - Material UI - PHP - MySql</strong>
         </p>
         <div id="btn-container">
           <a href="#">Ver Curriculo</a>

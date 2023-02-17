@@ -5,9 +5,9 @@ import ImgTeste from './src/img/Icon.png'
 
 export default {
     socialNetworks: [
-        { name: 'linkedin', icon: <FaLinkedinIn />, link: 'http://google.com' },
-        { name: 'github', icon: <FaGithub />, link: 'http://google.com' },
-        { name: 'instagram', icon: <FaInstagram />, link: 'http://google.com' }
+        { name: 'linkedin', icon: <FaLinkedinIn />, link: 'https://www.linkedin.com/in/dev-joaopaulosantos/' },
+        { name: 'github', icon: <FaGithub />, link: 'https://github.com/Git-JoaoPauloSantos' },
+        { name: 'instagram', icon: <FaInstagram />, link: 'https://www.instagram.com/joao_paul0_s/' }
     ],
     technologies: [
         { id: 'html', name: 'HTML5', progress: 70, icon: <DiHtml5 /> },
@@ -22,7 +22,7 @@ export default {
             id: 1,
             name: 'ReactMovie',
             image: Netflix,
-            link: 'http://google.com/',
+            link: 'https://joaopaulo-react-movies.netlify.app/',
             description: `lorem ipsum dolor sit amet, consectetur adip 
             lorem ipsum dolor sit amet lorem lorem ipsum dolor sit amet 
             lorem ipsum dolor sit amet lorem lorem ipsum dolor sit amet 
