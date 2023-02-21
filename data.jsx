@@ -1,4 +1,5 @@
-import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMysql, DiReact } from 'react-icons/di'
+import { DiHtml5, DiCss3, DiJsBadge, DiMysql, DiReact } from 'react-icons/di'
+import {SiPhp} from 'react-icons/si'
 import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
 import ReactMovies from './src/img/ReactMovies.png'
 
@@ -12,7 +13,7 @@ export default {
         { id: 'html', name: 'HTML5', progress: 70, icon: <DiHtml5 /> },
         { id: 'css', name: 'CSS3', progress: 65, icon: <DiCss3 /> },
         { id: 'js', name: 'JavaScript', progress: 55, icon: <DiJsBadge /> },
-        { id: 'node', name: 'Node.js', progress: 10, icon: <DiNodejsSmall /> },
+        { id: 'php', name: 'PHP', progress: 45, icon: <SiPhp /> },
         { id: 'mysql', name: 'MySQL', progress: 40, icon: <DiMysql /> },
         { id: 'react', name: 'React', progress: 45, icon: <DiReact /> },
     ],
