@@ -14,11 +14,10 @@ const TechnologiesContainer = () => {
       </div>
       <div className="content">
         <div className="skills">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Necessitatibus magni voluptate officiis laudantium incidunt
-            iusto rem. Odit aliquam maxime aliquid laboriosam, rerum et
-            voluptatibus nesciunt blanditiis deleniti, tempore obcaecati
-            placeat?
+          <p>Ao longo dos meus estudos tanto na faculdade quanto em casa. 
+            consegui habilidades com tecnologias front-end e back-end, 
+            como linguagens, bibliotecas e frameworks. Ao lado eu listo algumas
+            das pprincipais tecnologias que tenho experiencia
           </p>
         </div>
         <div className="technologies">

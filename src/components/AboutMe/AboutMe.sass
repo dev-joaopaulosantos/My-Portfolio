@@ -38,6 +38,23 @@
 
         @include mixins.tablet
             width: 100%
+        h3
+            font-weight: 200
+            &::after
+                content: '|'
+                margin-left: 3px
+                color: #2354be
+                opacity: 1
+                font-weight: 500
+                font-size: 1.4rem
+                animation: blink .7s infinite
+
+        @keyframes blink
+            0%, 100%
+                opacity: 1
+            50%
+                opacity: 0
+
 
         h1
             font-size: 2.5rem
@@ -47,7 +64,11 @@
 
         p
             line-height: 1.5rem
-            // letter-spacing: .1rem
+            text-align: justify
+
+        #p-tecnologies
+            font-weight: 700
+            padding: .5rem 0
             text-align: justify
 
         #btn-container

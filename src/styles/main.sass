@@ -1,4 +1,5 @@
 @use 'variables'
+@use 'mixins'
 
 *
     padding: 0
@@ -11,6 +12,10 @@ body
 a
     text-decoration: none
     color: variables.$text-color
+p
+    font-size: 1.1rem
+    @include mixins.big-smartphone
+        font-size: 1rem
 ul
     list-style: none
 h1
@@ -20,6 +25,9 @@ h1
     background: variables.$gradient
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
+
+h2, h3
+    font-weight: 300
 
 .line-subtitle
     height: 5px
