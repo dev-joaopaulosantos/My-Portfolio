@@ -18,7 +18,7 @@ const Sidebar = () => {
   }
 
   useEffect(() => {
-    let h3 = element.current
+    const h3 = element.current
     writingAnimation(h3)
   }, [])
 
@@ -31,11 +31,11 @@ const Sidebar = () => {
         <h3 ref={element}>Seja bem vindo(a) ao meu site!</h3>
         <h1>João Paulo Santos</h1>
         <p>
-          Sou um desenvolvedor full stack sempre em busca de novas oportunidades de apredizado.
-          Faço parte de algumas comunidades de programação onde compartilho e absorvo conhecimento.
+          Sou um desenvolvedor full stack, sempre em busca de novas oportunidades de apredizado.
+          Faço parte de comunidades de programação onde compartilho e absorvo conhecimento.
           Tento me atualizar o maximo possivel sobre as mais atuais tecnologias e ferramentas para construir projetos sólidos e modernos.
         </p>
-        <p id='p-tecnologies'>Tecnologias: React - JavaScript - Sass - Material UI - PHP - MySql</p>
+        <p id='p-tecnologies'>Tecnologias: React - JavaScript - PHP - MySql</p>
         <div id="btn-container">
           <a href="#">Ver Curriculo</a>
         </div>
