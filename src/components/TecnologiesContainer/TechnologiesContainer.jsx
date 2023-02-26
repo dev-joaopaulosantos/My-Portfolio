@@ -1,5 +1,4 @@
 import './TechnologiesContainer.sass'
-// import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMysql, DiReact } from 'react-icons/di'
 import ProgressBar from '../ProgressBar/ProgressBar'
 import data from '../../../data'
 
@@ -14,10 +13,10 @@ const TechnologiesContainer = () => {
       </div>
       <div className="content">
         <div className="skills">
-          <p>Ao longo dos meus estudos tanto na faculdade quanto em casa. 
+          <p>Com meus estudos tanto na faculdade quanto em cursos online. 
             consegui habilidades com tecnologias front-end e back-end, 
             como linguagens, bibliotecas e frameworks. Ao lado eu listo algumas
-            das pprincipais tecnologias que tenho experiencia
+            das pprincipais tecnologias que tenho experiencia.
           </p>
         </div>
         <div className="technologies">

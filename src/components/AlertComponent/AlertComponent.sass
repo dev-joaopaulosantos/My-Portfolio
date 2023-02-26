@@ -2,7 +2,6 @@
 @use '../../styles/mixins'
 
 .alert-container
-    // background: #dbdbdb9d
     position: fixed
     z-index: 9
     display: flex
@@ -36,13 +35,22 @@
         @include mixins.mobile
             padding: .4rem .8rem .8rem .8rem
 
-
         .alert-content
-            h2
-                display: inline-block
-                @include mixins.mobile
-                    font-size: 1.1rem
-            
+            .content-title
+                display: flex
+                align-items: center
+                span
+                    display: flex
+                    align-items: center
+                    margin-right: .5rem
+                    svg
+                        font-size: 1.8rem
+                        @include mixins.mobile
+                            font-size: 1.4rem
+                h2
+                    @include mixins.mobile
+                        font-size: 1.1rem
+
             p
                 padding-top: .3rem
                 @include mixins.mobile
@@ -63,7 +71,7 @@
             bottom: 0
             left: 0
             right: 0
-            
+
             .progress-bar
                 height: 100%
                 width: 100%

@@ -35,9 +35,9 @@ const Sidebar = () => {
           Faço parte de comunidades de programação onde compartilho e absorvo conhecimento.
           Tento me atualizar o maximo possivel sobre as mais atuais tecnologias e ferramentas para construir projetos sólidos e modernos.
         </p>
-        <p id='p-tecnologies'>Tecnologias: React - JavaScript - PHP - MySql</p>
+        <p id='academic-education'>Análise e Desenvolvimento de Sistemas - VI módulo- IFPI</p>
         <div id="btn-container">
-          <a href="#">Ver Curriculo</a>
+          <a href="">Ver Curriculo</a>
         </div>
         <SocialNetworks />
       </div>

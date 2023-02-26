@@ -87,7 +87,7 @@ const Contact = ({ setAlertIsOpen, setEmailSuccessfullySent, openAlertTime }) =>
 					<h2>Fale comigo</h2>
 					<div className="line-subtitle"></div>
 				</div>
-				<p>Sinta-se à vontade para me contatar. Aguardo sua mensagem! :).
+				<p>Sinta-se à vontade para me contatar. Aguardo sua mensagem! :)
 				</p>
 				<div className='info'>
 					<AiOutlineUser />

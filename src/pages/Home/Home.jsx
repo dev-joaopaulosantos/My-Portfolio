@@ -1,12 +1,12 @@
-import React, { useState } from 'react'
 import './Home.sass'
-// import MainContent from '../../components/MainContent/MainContent'
+import React, { useState } from 'react'
 import AboutMe from '../../components/AboutMe/AboutMe'
 import TechnologiesContainer from '../../components/TecnologiesContainer/TechnologiesContainer'
 import ProjectsContainer from '../../components/ProjectsContainer/ProjectsContainer'
 import Contact from '../../components/Contact/Contact'
 import AlertComponent from '../../components/AlertComponent/AlertComponent'
 
+// modifica o tempo em que o alerta de envio de email fica aberto
 const openAlertTime = 5000
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
       alertIsOpen={alertIsOpen} 
       setAlertIsOpen={setAlertIsOpen}
       emailSuccessfullySent={emailSuccessfullySent}
-      setEmailSuccessfullySent={setEmailSuccessfullySent}
+      // setEmailSuccessfullySent={setEmailSuccessfullySent}
       openAlertTime={openAlertTime}
       />
       <AboutMe />
