@@ -13,10 +13,12 @@ const TechnologiesContainer = () => {
       </div>
       <div className="content">
         <div className="skills">
-          <p>Com meus estudos tanto na faculdade quanto em cursos online. 
-            consegui habilidades com tecnologias front-end e back-end, 
-            como linguagens, bibliotecas e frameworks. Ao lado eu listo algumas
-            das pprincipais tecnologias que tenho experiencia.
+          <p>Com base nos meus estudos acadêmicos e em cursos online, tenho adquirido 
+            conhecimentos sólidos no desenvolvimento de aplicações web e mobile, abrangendo tanto o 
+            front-end quanto o back-end. Tenho explorado diversas linguagens de programação, 
+            bibliotecas e frameworks, capacitando-me a construir soluções eficientes e robustas.
+            Estou familiarizado com uma ampla gama de tecnologias relevantes para o desenvolvimento 
+            web moderno. Algumas das habilidades que adquiri incluem:
           </p>
         </div>
         <div className="technologies">
