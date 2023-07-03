@@ -11,15 +11,13 @@ export default {
         { name: 'instagram', icon: <FaInstagram />, link: 'https://www.instagram.com/joao_paul0_s/' }
     ],
     technologies: [
-        // { id: 'html', name: 'HTML5', progress: 70, icon: <DiHtml5 /> },
-        // { id: 'css', name: 'CSS3', progress: 65, icon: <DiCss3 /> },
         { id: 'js', name: 'JavaScript', progress: 65, icon: <DiJsBadge /> },
         { id: 'react', name: 'React', progress: 50, icon: <DiReact /> },
         { id: 'node', name: 'Node.js', progress: 50, icon: <SiNodedotjs /> },
-        { id: 'csharp', name: 'C#', progress: 35, icon: <SiCsharp /> },
+        // { id: 'csharp', name: 'C#', progress: 35, icon: <SiCsharp /> },
         { id: 'github', name: 'GitHub', progress: 45, icon: <SiGithub /> },
         // { id: 'dotnet', name: '.NET', progress: 35, icon: <SiDotnet /> },
-        // { id: 'php', name: 'PHP', progress: 45, icon: <SiPhp /> },
+        { id: 'php', name: 'PHP', progress: 45, icon: <SiPhp /> },
         { id: 'flutter', name: 'Flutter', progress: 40, icon: <SiFlutter /> },
         { id: 'mysql', name: 'MySQL', progress: 55, icon: <DiMysql /> },
     ],
@@ -39,13 +37,11 @@ export default {
             name: 'API Futebol Lagoense',
             image: ImgApi,
             link: 'https://github.com/dev-joaopaulosantos/Documentation-FutebolLagoense-API',
-            description: `Desenvolvi essa API utilizando Node.js, MongoDB, Express e Mongoose para gerenciar 
-            campeonatos de futebol amador da cidade de Lagoa de São Francisco. Esta API oferece rotas públicas
-            e privadas, criando uma plataforma segura e eficiente para o controle e organização dos campeonatos locais.
-            As rotas públicas da API são todas do tipo "GET", permitindo o acesso a informações essenciais 
-            sobre os campeonatos, como tabela de classificação, artilharia, jogos e resultados 
-            anteriores. Isso possibilita que torcedores, jogadores e demais interessados possam 
-            acompanhar os detalhes dos campeonatos em tempo real.`
+            description: `Desenvolvi essa API utilizando Node.js, MongoDB, Express e Mongoose. É usada para gerenciar campeonatos de 
+            futebol amador na cidade de Lagoa de São Francisco. Essa API oferece rotas públicas e privadas, criando uma 
+            plataforma segura e eficiente para o controle e organização dos campeonatos locais. As rotas públicas permitem 
+            acesso a informações essenciais, como tabela de classificação, artilharia, jogos e resultados anteriores, 
+            possibilitando que torcedores, jogadores e interessados acompanhem os detalhes dos campeonatos em tempo real.`
         }
     ]
 }

@@ -8,7 +8,7 @@ const TechnologiesContainer = () => {
   return (
     <section id="technologies-container">
       <div className="subtitle">
-        <h2>Habilidades</h2>
+        <h2> Habilidades </h2>
         <div className="line-subtitle"></div>
       </div>
       <div className="content">
