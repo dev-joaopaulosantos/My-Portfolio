@@ -1,5 +1,5 @@
 import { DiHtml5, DiCss3, DiJsBadge, DiMysql, DiReact } from 'react-icons/di'
-import { SiPhp, SiCsharp, SiDotnet, SiFlutter, SiGithub, SiNodedotjs } from 'react-icons/si'
+import { SiPhp, SiCsharp, SiDotnet, SiFlutter, SiGithub, SiNodedotjs, SiJava } from 'react-icons/si'
 import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
 import ReactMovies from './src/img/ReactMovies.png'
 import ImgApi from './src/img/api.jpg'
@@ -17,8 +17,9 @@ export default {
         // { id: 'csharp', name: 'C#', progress: 35, icon: <SiCsharp /> },
         // { id: 'github', name: 'GitHub', progress: 45, icon: <SiGithub /> },
         // { id: 'dotnet', name: '.NET', progress: 35, icon: <SiDotnet /> },
+        { id: 'java', name: 'Java', progress: 35, icon: <SiJava /> },
         { id: 'php', name: 'PHP', progress: 45, icon: <SiPhp /> },
-        { id: 'flutter', name: 'Flutter', progress: 40, icon: <SiFlutter /> },
+        // { id: 'flutter', name: 'Flutter', progress: 40, icon: <SiFlutter /> },
         { id: 'mysql', name: 'MySQL', progress: 55, icon: <DiMysql /> },
     ],
     projects: [

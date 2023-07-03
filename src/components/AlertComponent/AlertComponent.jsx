@@ -34,7 +34,7 @@ const AlertComponent = ({ alertIsOpen, setAlertIsOpen, emailSuccessfullySent, op
                             {emailSuccessfullySent ? 'Enviado!' : 'Erro!'}
                         </h2>
                     </div>
-                    <p>{emailSuccessfullySent ? 'Email enviado com sucesso, aguarde a minha resposta :)'
+                    <p>{emailSuccessfullySent ? 'Email enviado com sucesso, responderei em breve! :)'
                         : 'Erro ao enviar email :( Tente novamente mais tarde! '}</p>
                 </div>
                 <button onClick={() => closeAlert()}><AiOutlineClose /></button>

@@ -4,7 +4,7 @@ import SocialNetworks from '../SocialNetworks/SocialNetworks'
 import { useEffect, useRef, useState } from 'react'
 
 const Sidebar = () => {
-  const element = useRef() 
+  const element = useRef()
 
   const writingAnimation = (elemento) => {
     const fraseArray = elemento.innerText.split('')
@@ -31,14 +31,15 @@ const Sidebar = () => {
         <h3 ref={element}>Seja bem vindo(a) ao meu site!</h3>
         <h1>João Paulo Santos</h1>
         <p>
-          Sou um desenvolvedor full stack, sempre em busca de novas oportunidades de apredizado.
-          Faço parte de comunidades de programação onde compartilho e absorvo conhecimento.
-          Tento me atualizar o maximo possivel sobre as mais atuais tecnologias e ferramentas para construir projetos sólidos e modernos.
+          Sou um desenvolvedor full stack apaixonado por desafios e sempre em busca de novas oportunidades
+          para expandir meus conhecimentos. Sou um entusiasta das comunidades de programação, onde compartilho
+          minhas experiências e aprendo com outros profissionais talentosos. Meu objetivo é estar sempre
+          atualizado sobre as tecnologias e ferramentas mais recentes, a fim de construir projetos sólidos e modernos.
         </p>
         <p id='academic-education'>Análise e Desenvolvimento de Sistemas - VI módulo- IFPI</p>
-        <div id="btn-container">
+        {/* <div id="btn-container">
           <a href="">Ver Curriculo</a>
-        </div>
+        </div> */}
         <SocialNetworks />
       </div>
     </section>
