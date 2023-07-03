@@ -15,7 +15,7 @@ export default {
         { id: 'react', name: 'React', progress: 50, icon: <DiReact /> },
         { id: 'node', name: 'Node.js', progress: 50, icon: <SiNodedotjs /> },
         // { id: 'csharp', name: 'C#', progress: 35, icon: <SiCsharp /> },
-        { id: 'github', name: 'GitHub', progress: 45, icon: <SiGithub /> },
+        // { id: 'github', name: 'GitHub', progress: 45, icon: <SiGithub /> },
         // { id: 'dotnet', name: '.NET', progress: 35, icon: <SiDotnet /> },
         { id: 'php', name: 'PHP', progress: 45, icon: <SiPhp /> },
         { id: 'flutter', name: 'Flutter', progress: 40, icon: <SiFlutter /> },
