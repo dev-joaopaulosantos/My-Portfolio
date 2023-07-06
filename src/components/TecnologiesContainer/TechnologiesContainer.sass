@@ -3,8 +3,6 @@
 
 #technologies-container
     padding-top: 70px
-    // height: 100vh
-    // max-height: 700px
     @include mixins.tablet
         height: auto
     @include mixins.big-smartphone
@@ -34,7 +32,7 @@
             width: 50%
             height: 100%
             color: variables.$text-color
-            padding-right: 2rem
+            padding-right: 1rem
             @include mixins.tablet
                 width: 100%
                 margin-bottom: 2rem
@@ -44,34 +42,11 @@
                 line-height: 1.5rem
                 text-align: justify
 
-        .technologies
+        .technologies-div
             gap: .8rem
-            display: flex
-            flex-direction: column
-            flex-wrap: wrap
             width: 50%
+            padding-left: 1rem
+            color: variables.$text-color 
             @include mixins.tablet
                 width: 100%
                 margin-bottom: 1rem
-
-            .technology-card
-                display: flex
-                justify-content: start
-                gap: 1rem
-                transition: .4s
-
-                .technology-info
-                    width: 100%
-                    @include mixins.tablet
-                        font-size: .9rem
-
-                h3
-                    color: variables.$text-color
-                    margin-bottom: .6rem
-
-                svg
-                    font-size: 3.3rem
-                    color: #003598
-                    transition: .4s
-                    @include mixins.tablet
-                        font-size: 3rem

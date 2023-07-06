@@ -1,6 +1,7 @@
-import { DiHtml5, DiCss3, DiJsBadge, DiMysql, DiReact } from 'react-icons/di'
-import { SiPhp, SiCsharp, SiDotnet, SiFlutter, SiGithub, SiNodedotjs, SiJava } from 'react-icons/si'
-import { FaLinkedinIn, FaGithub, FaInstagram } from 'react-icons/fa'
+import { FaLinkedinIn, FaGithub, FaInstagram, FaJava, FaGitAlt, FaReact } from 'react-icons/fa'
+import { DiJsBadge, DiMysql, DiReact } from 'react-icons/di'
+import { SiPhp, SiNodedotjs, SiMongodb, SiMysql, SiVisualstudiocode } from 'react-icons/si'
+
 import ReactMovies from './src/img/ReactMovies.png'
 import ImgApi from './src/img/api.jpg'
 
@@ -10,18 +11,28 @@ export default {
         { name: 'github', icon: <FaGithub />, link: 'https://github.com/dev-joaopaulosantos' },
         { name: 'instagram', icon: <FaInstagram />, link: 'https://www.instagram.com/joao_paul0_s/' }
     ],
-    technologies: [
-        { id: 'js', name: 'JavaScript', progress: 65, icon: <DiJsBadge /> },
-        { id: 'react', name: 'React', progress: 50, icon: <DiReact /> },
-        { id: 'node', name: 'Node.js', progress: 50, icon: <SiNodedotjs /> },
-        // { id: 'csharp', name: 'C#', progress: 35, icon: <SiCsharp /> },
-        // { id: 'github', name: 'GitHub', progress: 45, icon: <SiGithub /> },
-        // { id: 'dotnet', name: '.NET', progress: 35, icon: <SiDotnet /> },
-        { id: 'java', name: 'Java', progress: 35, icon: <SiJava /> },
-        { id: 'php', name: 'PHP', progress: 45, icon: <SiPhp /> },
-        // { id: 'flutter', name: 'Flutter', progress: 40, icon: <SiFlutter /> },
-        { id: 'mysql', name: 'MySQL', progress: 55, icon: <DiMysql /> },
-    ],
+
+    technologies: {
+        languages: [
+            { id: 'js', name: 'JavaScript', icon: <DiJsBadge title='JavaScript' /> },
+            { id: 'java', name: 'Java', icon: <FaJava title='Java' /> },
+            { id: 'php', name: 'PHP', icon: <SiPhp title='PHP' /> },
+        ],
+        frameworks: [
+            { id: 'react', name: 'React', icon: <FaReact title='React' /> },
+        ],
+        tools: [
+            { id: 'node', name: 'Node.js', icon: <SiNodedotjs title='Node.js' /> },
+            { id: 'git', name: 'Git', icon: <FaGitAlt title='Git' /> },
+            { id: 'github', name: 'GitHub', icon: <FaGithub title='GitHub' /> },
+            { id: 'vscode', name: 'Visual Studio Code', icon: <SiVisualstudiocode title='Visual Studio Code' /> },
+        ],
+        database: [
+            { id: 'mysql', name: 'MySQL', icon: <SiMysql title='MySQL' /> },
+            { id: 'mongodb', name: 'MongoDB', icon: <SiMongodb title='MongoDB' /> },
+        ]
+    },
+
     projects: [
         {
             id: 1,

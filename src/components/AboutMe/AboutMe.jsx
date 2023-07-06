@@ -8,7 +8,6 @@ const Sidebar = () => {
 
   const writingAnimation = (elemento) => {
     const fraseArray = elemento.innerText.split('')
-    console.log(fraseArray)
     elemento.innerText = ''
     fraseArray.forEach((letter, i) => {
       setTimeout(() => {
