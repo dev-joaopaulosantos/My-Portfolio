@@ -1,0 +1,19 @@
+.container{
+    width: 50%;
+    padding: 1rem;
+}
+.single-container{
+    width: 100%;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 780px){
+    .hide-container{
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
+    .container{
+        width: 100%;
+    }
+}

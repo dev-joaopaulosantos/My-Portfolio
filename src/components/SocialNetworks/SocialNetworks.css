@@ -1,0 +1,28 @@
+#social-networks {
+    display: flex;
+    justify-content: start;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+#social-networks .social-btn {
+    padding: 0.6rem;
+    background-color: #1d1d1d;
+    border-radius: 5px;
+    color: #333;
+    font-size: 1.3rem;
+}
+#social-networks #linkedin {
+    color: #003598;
+}
+#social-networks #github {
+    color: #003598;
+}
+#social-networks #instagram {
+    color: #003598;
+}
+#social-networks :hover {
+    background: linear-gradient(90deg, #003598 0%, #2354be 100%);
+}
+#social-networks :hover > svg {
+    color: #fff;
+}

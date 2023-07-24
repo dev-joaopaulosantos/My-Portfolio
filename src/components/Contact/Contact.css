@@ -1,0 +1,68 @@
+#contact-container p{
+    margin-bottom: 1rem;
+}
+#contact-infos .info {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 0.8rem;
+}
+#contact-infos .info svg {
+    margin-right: 0.8rem;
+    font-size: 1.4rem;
+    color: #003598;
+}
+#contact-infos .info p {
+    padding: 0;
+    margin: 0;
+}
+
+#form-email form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+#form-email form input,
+#form-email form textarea {
+    padding: 0.7rem 0.3rem;
+    border-radius: 5px;
+    border: none;
+    outline-color: #003598;
+}
+#form-email form #name {
+    margin-right: 2%;
+}
+#form-email form #name,
+#form-email form #last-name {
+    width: 49%;
+    display: flex;
+}
+#form-email form #email,
+#form-email form #msg {
+    margin-top: 2%;
+    width: 100%;
+}
+#form-email form #button {
+    font-size: 1rem;
+    margin: 0.8rem 0;
+}
+#form-email form .btn-disabled {
+    opacity: 0.3;
+}
+#form-email form .recaptcha {
+    width: 100%;
+    padding: 0.8rem 0;
+}
+#form-email form .recaptcha .error-recaptcha {
+    color: #d32f2f;
+    display: flex;
+    justify-content: start;
+    font-size: 0.9rem;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 780px){
+  #contact-infos{
+    display: none;
+  }
+}

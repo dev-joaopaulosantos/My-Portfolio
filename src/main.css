@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-stack);
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--body-bg-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    padding: 0 1rem;
+}
+
+.line-subtitle {
+    height: 5px;
+    background: var(--gradient);
+    border-radius: 5px;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide-title {
+    display: none;
+}
+
+.btn{
+    padding: .8rem 1rem;
+    color: var(--text-color);
+    background: var(--gradient);
+    text-decoration: none;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilizando a barra de rolagem nos navegadores Chrome e Edge */
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #00000000;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--gradient);
+    border-radius: 20px;
+    /* border: 3px solid orange */
+}
+
+/* estilizando a barra de rolagem no navehador firfox */
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #003598 #00000000;
+}
+
+
+/* RESPONSIVIDADE */
+@media(max-width: 780px){
+    p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    h1, h2{
+        font-size: 2.1rem;
+    }
+    .btn{
+        width: 100%;
+    }
+}

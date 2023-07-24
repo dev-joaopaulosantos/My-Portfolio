@@ -1,0 +1,130 @@
+header {
+    position: fixed;
+    height: 70px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 0 2rem;
+    background: var(--body-bg-color);
+}
+
+#nav-desktop {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-desktop #name-container {
+    gap: 0.8rem;
+}
+
+#name-container #icon-user {
+  width: 50px;
+  height: 50px;
+  border-radius: 30px;
+  background: var(--gradient);
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+#name-container h2 {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+#menu-desktop ul {
+    list-style: none;
+    gap: 0.5rem;
+}
+
+#menu-desktop ul li a {
+    color: var(--text-color);
+    text-transform: uppercase;
+    padding: 0.3rem 0.5rem;
+    transition: all 0.4s;
+}
+#menu-desktop ul li a:hover {
+    background: #003598;
+    border-radius: var(--card-border-radius);
+}
+
+#mobile-menu-btn {
+    display: none;
+    color: var(--text-color);
+    background: transparent;
+    font-size: 2.2rem;
+    border: none;
+    width: 40px;
+    height: 40px;
+}
+
+#menu-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background: #000000c7;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    height: 100vh;
+    transition: all 0.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    backdrop-filter: blur(5px);
+}
+
+#menu-mobile ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+#menu-mobile ul li a {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+#menu-mobile #social-networks{
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-close {
+    width: 0%;
+}
+
+.menu-open {
+    width: 70%;
+}
+
+/* RESPONSIVIDADES */
+@media(max-width: 780px){
+    header{
+        padding: 0 1rem;
+    }
+    #name-container #icon-user{
+        background-image: url("../../img/euicon.png");
+        background-size: cover;
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+    #icon-user span {
+        display: none;
+    }
+    #name-container h2{
+        font-size: 1.2rem;
+    }
+    #nav-desktop #menu-desktop {
+            display: none;
+    }
+    #mobile-menu-btn{
+        display: block
+    }
+    .menu-open {
+            width: 100%;
+    }
+}

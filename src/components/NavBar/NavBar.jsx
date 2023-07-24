@@ -1,6 +1,6 @@
 import { AiOutlineMenu } from 'react-icons/ai'
 import { AiOutlineClose } from 'react-icons/ai'
-import '../NavBar/NavBar.sass'
+import '../NavBar/NavBar.css'
 import SocialNetworks from '../../components/SocialNetworks/SocialNetworks'
 import { useEffect, useRef, useState } from 'react'
 
@@ -53,12 +53,12 @@ const NavBar = () => {
   return (
     <header>
       <div id="nav-desktop">
-        <div id="name-container">
-          <div id='icon-user'><span>JP</span></div>
+        <div id="name-container" className='center'>
+          <div id='icon-user' className='center'><span>JP</span></div>
           <h2>João Paulo Santos</h2>
         </div>
         <nav id='menu-desktop' ref={desktopMenu}>
-          <ul>
+          <ul className='center'>
             <li><a href="#about-container">Sobre mim</a></li>
             <li><a href="#technologies-container">Habilidades</a></li>
             <li><a href="#projects-container">Projetos</a></li>
@@ -76,7 +76,7 @@ const NavBar = () => {
           <li><a href="#projects-container">Projetos</a></li>
           <li><a href="#contact-container">Contato</a></li>
         </ul>
-        <div id="social-networks">
+        <div id="social-networks" className='center'>
           <SocialNetworks />
         </div>
       </nav>

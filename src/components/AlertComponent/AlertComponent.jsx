@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import './AlertComponent.sass'
+import './AlertComponent.css'
 import { AiOutlineClose } from 'react-icons/ai'
 import { MdErrorOutline } from 'react-icons/md'
 import { MdCheckCircleOutline } from 'react-icons/md'

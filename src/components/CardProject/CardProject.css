@@ -1,0 +1,78 @@
+.project {
+	width: 320px;
+	height: 100%;
+	transition: 0.3s;
+}
+.project:hover {
+  	transform: scale(1.05);
+}
+.project .image-project {
+	width: inherit;
+	height: 180px;
+	border-radius: 5px 5px 0 0;
+	transition: all 0.5s;
+}
+.project .content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background: #111;
+	height: 220;
+	padding: 0 0.5rem 0 0.5rem;
+	border-radius: 0 0 5px 5px;
+	overflow: hidden;
+	color: #fff;
+	transition: all 0.5s;
+}
+.content .project-description {
+	height: 150px;
+	overflow: auto;
+}
+.content .project-description p {
+	text-align: justify;
+	padding: 0 0.5rem;
+	font-size: 0.9rem;
+}
+.content .card-btn {
+	margin: 0.5rem 0;
+	padding: 0 0.5rem;
+	justify-content: start;
+}
+.content .card-btn a {
+	padding: 0.5rem 0.8rem;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+.image-project .gradient {
+	width: inherit;
+	height: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	background: linear-gradient(to top, #000000 1%, transparent 99%);
+}
+.image-project .gradient .name-project {
+	color: #fff;
+	padding: 0.8rem;
+	text-transform: uppercase;
+	transition: all 0.3s;
+}
+
+/* Estilizando a barra de rolagem nos navegadores Chrome e Edge */
+.project-description::-webkit-scrollbar {
+    width: 5px;
+}
+.project-description::-webkit-scrollbar-track {
+  background: #00000000;
+}
+.project-description::-webkit-scrollbar-thumb {
+    background: var(--gradient);
+    border-radius: 20px;
+    /* border: 3px solid orange */
+}
+/* estilizando a barra de rolagem no navehador firfox */
+.project-description {
+    scrollbar-width: thin;
+    scrollbar-color: #003598 #00000000;
+}

@@ -1,8 +1,8 @@
-import './Footer.sass'
+import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className='center'>
         <p>&copy; 2023 - João Paulo Santos</p>
     </footer>
   )

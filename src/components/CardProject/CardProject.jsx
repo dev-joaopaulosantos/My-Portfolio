@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './CardProject.sass'
+import './CardProject.css'
 
 const CardProject = ({ project }) => {
 
@@ -19,8 +19,8 @@ const CardProject = ({ project }) => {
                 <div className="project-description">
                     <p>{project.description}</p>
                 </div>
-                <div className="card-btn">
-                    <a href={project.link} target="_blank">Ver Projeto</a>
+                <div className="card-btn center">
+                    <a href={project.link} target="_blank" className='btn'>Ver Projeto</a>
                 </div>
             </div>
         </div>

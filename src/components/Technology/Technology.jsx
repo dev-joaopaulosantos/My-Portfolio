@@ -1,5 +1,5 @@
 import React from 'react'
-import './Technology.sass'
+import './Technology.css'
 
 const Technology = ({ title, technology }) => {
     return (

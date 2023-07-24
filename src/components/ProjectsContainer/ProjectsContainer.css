@@ -1,0 +1,14 @@
+.projects{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 2rem;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 780px){
+    .projects{
+        justify-content: center;
+    }
+}

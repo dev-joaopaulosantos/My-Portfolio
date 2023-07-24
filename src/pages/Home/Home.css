@@ -1,0 +1,12 @@
+#main-container{
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    }
+
+/* RESPONSIVIDADE */
+@media(max-width: 780px){
+    #main-container{
+        padding: 0;
+    }
+}

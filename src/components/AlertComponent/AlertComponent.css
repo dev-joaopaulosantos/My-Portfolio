@@ -1,0 +1,92 @@
+.alert-container {
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 100px;
+    left: 3rem;
+    right: 3rem;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+
+.alert-container .alert {
+    color: #fff;
+    background: linear-gradient(90deg, #313131 46%, #262626 100%);
+    padding: 0.8rem 1.2rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: rgba(192, 192, 192, 0.2) 0px 2px 8px 0px;
+}
+
+.alert-content .content-title {
+    display: flex;
+    align-items: center;
+}
+
+.content-title h2{
+    font-size: 1.5rem;
+}
+
+.alert-content .content-title span {
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+
+.alert-content .content-title span svg {
+    font-size: 1.8rem;
+}
+
+.alert-content p {
+    padding-top: 0.3rem;
+}
+
+.alert button {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0 0.5rem;
+    /* color: var(--text-color); */
+}
+
+.alert .alert-progress-bar {
+    height: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.alert-progress-bar .progress-bar {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background: #fff;
+}
+
+/* RESPONSIVIDADE */
+@media(max-width: 780px){
+    .alert-container{
+        left: 0;
+        right: 0;
+    }
+    .alert-container .alert{
+        width: 90%;
+        padding: .3rem .5rem;
+    }
+    .content-title h2{
+        font-size: 1.1rem;
+    }
+    .alert-content p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,15 @@
+.title-technology {
+    margin-bottom: 1rem;
+}
+.technology {
+    display: flex;
+    gap: 1rem;
+}
+.technology .icon :hover {
+    opacity: 90%;
+}
+.technology .icon svg {
+    font-size: 2.8rem;
+    color: #003598;
+    transition: 0.4s;
+}

@@ -1,4 +1,4 @@
-import './Home.sass'
+import './Home.css'
 import React, { useState } from 'react'
 import AboutMe from '../../components/AboutMe/AboutMe'
 import TechnologiesContainer from '../../components/TecnologiesContainer/TechnologiesContainer'
@@ -15,20 +15,24 @@ const Home = () => {
 
   return (
     <main id='main-container'>
-      <AlertComponent 
-      alertIsOpen={alertIsOpen} 
-      setAlertIsOpen={setAlertIsOpen}
-      emailSuccessfullySent={emailSuccessfullySent}
-      // setEmailSuccessfullySent={setEmailSuccessfullySent}
-      openAlertTime={openAlertTime}
+      <AlertComponent
+        alertIsOpen={alertIsOpen}
+        setAlertIsOpen={setAlertIsOpen}
+        emailSuccessfullySent={emailSuccessfullySent}
+        // setEmailSuccessfullySent={setEmailSuccessfullySent}
+        openAlertTime={openAlertTime}
       />
+
       <AboutMe />
+
       <TechnologiesContainer />
+
       <ProjectsContainer />
-      <Contact 
-      setAlertIsOpen={setAlertIsOpen}
-      setEmailSuccessfullySent={setEmailSuccessfullySent}
-      openAlertTime={openAlertTime}
+
+      <Contact
+        setAlertIsOpen={setAlertIsOpen}
+        setEmailSuccessfullySent={setEmailSuccessfullySent}
+        openAlertTime={openAlertTime}
       />
     </main>
   )
