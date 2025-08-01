@@ -5,6 +5,8 @@ import { SiPhp, SiNodedotjs, SiMongodb, SiMysql, SiVisualstudiocode } from 'reac
 import ReactMovies from './src/img/ReactMovies.png'
 import ImgApi from './src/img/api.jpg'
 
+const teste = "teste"
+
 export default {
     socialNetworks: [
         { name: 'linkedin', icon: <FaLinkedinIn />, link: 'https://www.linkedin.com/in/dev-joaopaulosantos/' },

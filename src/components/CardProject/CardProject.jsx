@@ -20,7 +20,7 @@ const CardProject = ({ project }) => {
                     <p>{project.description}</p>
                 </div>
                 <div className="card-btn center">
-                    <a href={project.link} target="_blank" className='btn'>Ver Projeto</a>
+                    <a href={project.link} target="_blank" className='btn'>Ver Projeto teste</a>
                 </div>
             </div>
         </div>
