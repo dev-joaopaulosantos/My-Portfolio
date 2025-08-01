@@ -28,7 +28,7 @@ const Sidebar = () => {
 
       <Container center={true} hideContainer={true}>
         <div id="image">
-          <img src={Avatar} alt="João Paulo Santos teste teste" />
+          <img src={Avatar} alt="João Paulo Santos Teste" />
         </div>
       </Container>
 
