@@ -28,14 +28,14 @@ const Sidebar = () => {
 
       <Container center={true} hideContainer={true}>
         <div id="image">
-          <img src={Avatar} alt="João Paulo Santos Teste" />
+          <img src={Avatar} alt="João Paulo Santos" />
         </div>
       </Container>
 
       <Container center={true}>
         <div id="about">
           <h3 ref={element}>Seja bem vindo(a) ao meu site!</h3>
-          <h1>João Paulo Santos</h1>
+          <h1>João Paulo Santos Teste</h1>
           <p>
             Sou um desenvolvedor full stack apaixonado por desafios e sempre em busca de novas oportunidades
             para expandir meus conhecimentos. Sou um entusiasta das comunidades de programação, onde compartilho
